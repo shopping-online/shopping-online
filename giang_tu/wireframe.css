@@ -1,0 +1,85 @@
+.container{
+	margin: auto;
+	border: 1px solid red;
+}
+.hover:hover{
+	background-color: #6699FF;
+	border-radius: 5px;
+}
+.item{
+	font-size: 15px;
+}
+
+.font{
+	color: white;
+}
+.background-color{
+	background-color: transparent !important;
+	border-color:transparent !important;
+}
+.background-color:hover{
+	background-color: #6699FF !important;
+}
+.tron{ 
+	margin-left: 10px;
+	float: left;
+	width: 14px;
+	height: 14px;
+	border:1px solid #333333;
+	border-radius: 50%;
+	background-color: #777777;
+}
+.tron:after{
+	content: '  ';
+	background-color: #333333;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	margin: 1px;
+}
+
+.text_col_6{
+	text-transform: capitalize;
+	font-size: 25px;
+}
+
+.text_col_9{
+	text-transform: capitalize;
+	font-size: 20px;
+}
+
+.gach_ngang:after {
+    content: " ";
+    background-color: #777777;
+    width: 300px;
+    height: 2px;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 35px;
+}
+.team_text_col_9{
+	color: black;
+	text-transform: uppercase;
+
+}
+.team_text_col_9:hover{
+	background-color: blue;
+	width: 90px;
+}
+.font_tato{
+	font-family: 'Lato', sans-serif;
+}
+.font_selester{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.gach_ngang_2:after{
+	content: '  ';
+	width: 250px;
+	height: 2px;
+	background-color: #777777;
+	position: absolute;
+}
+.top10{
+	color: black;
+}
