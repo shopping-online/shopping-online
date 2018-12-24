@@ -29,70 +29,67 @@
     <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
     <link rel="stylesheet" href="/assets/stylesheets/main.css">
     <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+    <script src="/assets/javascripts/style.js" charset="utf-8"></script>
 
 </head>
 
 <body>
     <header>
-        <div class="container-fluid">
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="row bg-gray">
-                    <div class="col-3 d-flex justify-content-center align-items-center">
-                        <a href="#">
-                            <h2>Tiny Shop</h2>
-                        </a>
-                    </div>
-                    <div class="col-6 d-flex justify-content-center align-items-center">
-                        <ul class="d-flex">
-                            <li class="btn">
-                                <a href="#">Home</a>
-                            </li>
-                            <li class="btn">
-                                <a href="#">Shop</a>
-                            </li>
-                            <li class="btn menu">
-                                <a href="#">Products</a>
-                                <ul class="submenu">
-                                    <div class="row">
-                                        <div class="col-4 d-flex justify-content-center">
-                                            <ul class="btn">
-                                                <h3>laptop</h3>
-                                                <li class="btn"><a href="#">Asus</a></li>
-                                                <li class="btn"><a href="#">Acer</a></li>
-                                                <li class="btn"><a href="#">Dell</a></li>
-                                                <li class="btn"><a href="#">Macbook</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4 d-flex justify-content-center align-items-center">
-                                            <ul class="btn">
-                                                <h3>Mobile</h3>
-                                                <li class="btn"><a href="#">Asus</a></li>
-                                                <li class="btn"><a href="#">Acer</a></li>
-                                                <li class="btn"><a href="#">Dell</a></li>
-                                                <li class="btn"><a href="#">Macbook</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-4 d-flex justify-content-center">
-                                            <ul class="btn">
-                                                <h3>Tablet</h3>
-                                                <li class="btn"><a href="#">Asus</a></li>
-                                                <li class="btn"><a href="#">Acer</a></li>
-                                                <li class="btn"><a href="#">Dell</a></li>
-                                                <li class="btn"><a href="#">Macbook</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </li>
-                            <li class="btn"><a href="#">Blog</a></li>
-                            <li class="btn"><a href="#">Pages</a></li>
+        <div class="row bg-gray fixed navigator" id="navigator">
+            <div class="col-3 d-flex justify-content-center align-items-center">
+                <a href="#">
+                    <h2>Tiny Shop</h2>
+                </a>
+            </div>
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <ul class="d-flex">
+                    <li class="btn">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="btn">
+                        <a href="#">Shop</a>
+                    </li>
+                    <li class="btn menu">
+                        <a href="#">Products</a>
+                        <ul class="submenu">
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center">
+                                    <ul class="btn">
+                                        <h3>laptop</h3>
+                                        <li class="btn m-15"><a href="#">Asus</a></li>
+                                        <li class="btn m-15"><a href="#">Acer</a></li>
+                                        <li class="btn m-15"><a href="#">Dell</a></li>
+                                        <li class="btn m-15"><a href="#">Macbook</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <ul class="btn">
+                                        <h3>Mobile</h3>
+                                        <li class="btn m-15"><a href="#">Samsung</a></li>
+                                        <li class="btn m-15"><a href="#">Sony</a></li>
+                                        <li class="btn m-15"><a href="#">Iphone</a></li>
+                                        <li class="btn m-15"><a href="#">Oppo</a></li>
+                                        <li class="btn m-15"><a href="#">HTC</a></li>
+                                        <li class="btn m-15"><a href="#">Xiaomi</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                    <ul class="btn">
+                                        <h3>Tablet</h3>
+                                        <li class="btn m-15"><a href="#">Samsung Tab</a></li>
+                                        <li class="btn m-15"><a href="#">Ipad</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </ul>
-                    </div>
-                    <div class="col-3 d-flex justify-content-center align-items-center">
-                        <i class="fas fa-shopping-cart"></i>
-                        <i class="fas fa-search"></i>
-                    </div>
-                </div>
+                    </li>
+                    <li class="btn"><a href="#">Blog</a></li>
+                    <li class="btn"><a href="#">Pages</a></li>
+                </ul>
+            </div>
+            <div class="col-3 d-flex justify-content-center align-items-center">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-search"></i>
             </div>
         </div>
     </header>

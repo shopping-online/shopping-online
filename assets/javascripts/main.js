@@ -1,3 +1,4 @@
+var scrollNavBar = require('./style');
 var mainModule = (function($) {
   function initializeFirebase() {    
     var config = {
