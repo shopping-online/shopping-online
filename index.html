@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shopping Online 2019</title>
+    <title>Shopping Online</title>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/5.7.1/firebase-app.js"></script>
@@ -16,20 +16,204 @@
     <script defer src="/__/firebase/init.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
     <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+
     <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
     <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <style type="text/css">
+      .btn {
+        margin-left: 15px;
+      }
+    </style>
 
   </head>
   <body>
-    <div class="main">
-      <h1>Welcome ShoppingOnline 2019 <i class="fas fa-shopping-cart"></i></h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form>
+            <div class='row'>
+              <div class='col-sm-6'>
+            <div class="form-group">
+              <label for="loai_tb">Loại thiết bị</label>
+              <select class="form-control" id="loai_tb">
+                <option>PC</option>
+                <option>Laptop</option>
+                <option>Ram</option>
+                <option>HDD</option>
+                <option>LCD</option>
+                <option>Keyboard</option>
+                <option>Mouse</option>
+                <option>Khác</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="loai_tb">Loại thiết bị</label>
+              <input type="text" class="form-control" id="loai_tb" placeholder="Lót chuột">
+            </div>
+            <div class="form-group">
+              <label for="hang_sx">Hãng sản xuất</label>
+              <select class="form-control" id="hang_sx">
+                <option>Acer</option>
+                <option>Asus</option>
+                <option>Lenovo</option>
+                <option>Dell</option>
+                <option>HP</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ten_may">Tên máy</label>
+              <input type="text" class="form-control" id="ten_may" placeholder="Acer Aspire E5-475-31KC">
+            </div>
+            <div class="form-group">
+              <label for="sn">Series Number</label>
+              <input type="text" class="form-control" id="sn" placeholder="J9N0...">
+            </div>
+            <div class="form-group">
+              <label for="pn">Product Number</label>
+              <input type="text" class="form-control" id="pn" placeholder=" ">
+            </div>
+            <div class="form-group">
+              <label for="xuat_xu">Xuất xứ</label>
+              <select class="form-control" id="xuat_xu">
+                <option>Trung Quoc</option>
+                <option>Dai Loan</option>
+                <option>USA</option>
+                <option>Nhat</option>
+                <option>Singapore</option>
+                <option>Quoc gia khac</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="xuat_xu">Quốc gia</label>
+              <input type="text" class="form-control" id="xuat_xu" placeholder="Malaysia">
+            </div>
+            <div class="form-group">
+              <label for="ngay_xuat_xuong">Ngày xuất xưởng</label>
+              <input type="text" class="form-control" id="ngay_xuat_xuong" placeholder="16/07/2017">
+            </div>
+             <div class="form-group">
+              <label for="tg_bh">Bảo hành</label>
+              <select class="form-control" id="tg_bh">
+                <option>01 tháng</option>
+                <option>02 tháng</option>
+                <option>03 tháng</option>
+                <option>06 tháng</option>
+                <option>09 tháng</option>
+                <option>12 tháng</option>
+                <option>18 tháng</option>
+                <option>24 tháng</option>
+                <option>36 tháng</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="npp">Nhà phân phối</label>
+              <select class="form-control" id="npp">
+                <option>Digiworld</option>
+                <option>FPT</option>
+                <option>Viễn Sơn</option>
+                <option>Minh Thông</option>
+                <option>Viết Sơn</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ngay_nhap">Ngày nhập kho</label>
+              <input type="text" class="form-control" id="ngay_nhap" placeholder="16/07/2017">
+            </div>
+            <div class="form-group">
+              <label for="ngay_ban">Ngày bán</label>
+              <input type="text" class="form-control" id="ngay_ban" placeholder="16/07/2017">
+            </div>
+            <div class="form-group">
+              <label for="gia_nhap">Giá nhập</label>
+              <input type="text" class="form-control" id="gia_nhap" placeholder="16/07/2017">
+            </div>
+            <div class="form-group">
+              <label for="gia_ban">Giá bán</label>
+              <input type="text" class="form-control" id="gia_ban" placeholder="16/07/2017">
+            </div>
+
+              </div>
+              <div class='col-sm-6'>
+                <div class"tskt">THÔNG SỐ KỸ THUẬT</div>
+                  <div class="form-group">
+                    <label for="cpu">CPU</label>
+                    <input type="text" class="form-control" id="cpu" placeholder="Core i5-6006U">
+                  </div>
+                  <div class="form-group">
+                    <label for="ram">RAM</label>
+                    <input type="text" class="form-control" id="ram" placeholder="DDR4_4GB 2166MHz">
+                  </div>
+                  <div class="form-group">
+                    <label for="hdd">HDD</label>
+                    <select class="form-control" id="hdd">
+                      <option>500GB</option>
+                      <option>1TB</option>
+                      <option>2TB</option>
+                    </select>
+                    <label for="ssd">SSD</label>
+                    <select class="form-control" id="ssd">
+                      <option>120GB</option>
+                      <option>128GB</option>
+                      <option>240GB</option>
+                      <option>250GB</option>
+                      <option>256GB</option>
+                      <option>500GB</option>
+                      <option>1TB</option>
+                      <option>2TB</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="card_do_hoa">Card Đồ Họa</label>
+                    <input type="text" class="form-control" id="card_do_hoa" placeholder="Nvidia Geforce GTX 1080i">
+                  </div>
+                  <div class="form-group">
+                    <label for="kich_thuoc">Kích thước màn hình</label>
+                    <select class="form-control" id="kich_thuoc">
+                      <option>10"</option>
+                      <option>12"</option>
+                      <option>13"</option>
+                      <option>14"</option>
+                      <option>15"</option>
+                      <option>16.5"</option>
+                      <option>17"</option>
+                    </select>
+                   <div class="form-group">
+                    <label for="hdh">Hệ điều hành</label>
+                    <select class="form-control" id="hdh">
+                      <option>Windows</option>
+                      <option>MacOs</option>
+                      <option>Linux</option>
+                      <option>ChromeOs</option>
+                      <option>Khác...</option>
+                    </select>
+                  </div>
+              </div>
+            </div>
+            <button class="btn mt-3 btn-primary col-sm-3" type="submit">Save</button>
+          </form>
+         </div>
+         </div>
+        </div>
     </div>
   </body>
 </html>
