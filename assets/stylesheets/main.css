@@ -7,3 +7,14 @@ body {
 * {
   box-sizing: border-box;
 }
+.main{
+	width:550px;
+	height:550px;
+	border:1px solid white;
+}
+h1{
+	color:blue;
+}
+.bg-img{
+	background-image: url('..assets/images/Banner PC.webp');
+}
