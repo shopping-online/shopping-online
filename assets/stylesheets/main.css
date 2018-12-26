@@ -16,5 +16,5 @@ h1{
 	color:blue;
 }
 .bg-img{
-	background-image: url('..assets/images/Banner PC.webp');
+	background-image: url('../images/Banner PC.webp');
 }
