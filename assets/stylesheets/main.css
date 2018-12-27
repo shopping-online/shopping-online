@@ -7,3 +7,164 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.bg_header_defaul {
+	/*position: absolute;*/
+	width: 1440px;
+	height: 97px;
+	left: 0px;
+	top: 0px;
+	background-color: #212529;
+	border-bottom: 3px solid #AC2430;
+}
+
+.slide_banner {
+	/*position: absolute;*/
+	width: 1440px;
+	height: 720px;
+	left: 0px;
+	top: 100px;
+	background: url('../images/bg_image.jpg');
+	background-size: cover;
+	background-repeat: none;
+}
+
+.body {
+	position: relative;
+	width: 1440px;
+	height: 2410px;
+	left: 0px;
+	/*top: 820px;*/
+	background-color: #F5F5F5;
+}
+
+.khuyen_mai {
+	position: absolute;
+	width: 1270px;
+	height: 470px;
+	left: 85px;
+	top: 50px;
+	border-bottom: 3px solid #AC2430;
+}
+
+.heading {
+	font-family: Roboto Condensed;
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #AC2430;
+}
+
+.sp_khuyen_mai {
+	top: 30px;
+	position: relative;
+	width: 1110px;
+	height: 360px;
+	margin: auto;
+}
+
+.banner_body {
+	position: absolute;
+	width: 1440px;
+	height: 400px;
+	/*left: 1px;*/
+	top: 570px;
+	background: url('../images/banner.jpg')
+}
+
+.hot {
+	position: absolute;
+	width: 1110px;
+	height: 1340px;
+	left: 165px;
+	top: 1020px;
+	border: 1px solid #000;
+}
+
+.san_pham {
+	float: left;
+}
+
+.item {
+	/*position: relative;*/
+	background-color: #fff;
+	width: 255px;
+	height: 360px;
+	margin: auto;
+}
+
+.item_top {
+	height: 255px;
+	border-bottom: 1px solid #000;
+}
+
+.item_bot {
+	position: relative;
+}
+
+.ten_sp {
+	position: absolute;
+	top: 15px;
+	left: 21px;
+
+	font-family: Roboto Condensed;
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 16px;
+
+	color: #000;
+}
+
+.gia_km {
+	position: absolute;
+	left: 21px;
+	top: 44px;
+
+	font-family: Roboto Condensed;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 20px;
+
+	color: #000;
+}
+
+.gia {
+	position: absolute;
+	left: 21px;
+	top: 73px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	font-size: 13px;
+	text-decoration-line: line-through;
+
+	color: rgba(164, 164, 164, 0.8);
+}
+
+.mua {
+	position: absolute;
+	right: 17px;
+	top: 37px;
+	width: 30px;
+	height: 30px;
+	background: url('../images/ic_checkout.svg');
+	background-size: cover;
+	background-repeat: none;
+
+}
+
+.item_1 {
+	width: 300px;
+	height: 100%;
+	background: url('../images/item_1.jpg');
+	background-size: 100% 100%;
+	background-repeat: none;
+}
