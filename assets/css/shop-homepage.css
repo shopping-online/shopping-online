@@ -6,10 +6,18 @@
 
 body {
   padding-top: 54px;
+  font-family: "tahoma"
+  font-size: 12px;
 }
 
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
   }
+}
+
+.list-group-item, .nav-item {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
