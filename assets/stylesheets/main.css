@@ -65,6 +65,7 @@ body {
 	width: 1110px;
 	height: 360px;
 	margin: auto;
+	margin-bottom: 30px;
 }
 
 .banner_body {
@@ -82,7 +83,7 @@ body {
 	height: 1340px;
 	left: 165px;
 	top: 1020px;
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 }
 
 .san_pham {
