@@ -7,14 +7,114 @@ body {
 * {
   box-sizing: border-box;
 }
-.main{
-	width:550px;
-	height:550px;
-	border:1px solid white;
-}
 h1{
 	color:blue;
+	margin-left:-180px;
 }
-.bg-img{
-	background-image: url('../images/Banner PC.webp');
+.main{
+	width:950px;
+	height:950px;
+	border:1px solid white;
+	margin:auto;
 }
+.can_giua {
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:gray;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color:black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+a{
+	font-size:18px;
+	margin-right:7px;
+  font-family: 'Open Sans', sans-serif;
+}
+i{
+  color:white;
+  margin:3px;
+}
+.fas.fa-shopping-cart{
+    color:blue;
+}
+p{
+   margin-left:30px;
+   font-size:18px;
+   text-transform:capitalize;
+   width:250px;
+   color:white;
+   text-align:center;
+}
+.img{
+    width:250px;
+    height:250px;
+    border:1px solid white;
+    margin-left:40px;
+}
+.col-3{
+    width:33.33%;
+    float:left;
+}
+p{
+  color:navy;
+  margin-left:-5px;
+  text-transform:uppercase;
+}
+.price{
+   margin-left:50px;
+   color:red;
+}
+img{
+  box-shadow:0 0 1px gray;
+}
+button{
+  margin-left:300px;
+  width:150px;
+  margin:20px;
+}
+
