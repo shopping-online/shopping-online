@@ -1,5 +1,5 @@
 /* responsive for mobile */
-@media (min-width:600px){
+@media (min-width:768px){
     .col-md-1{
         grid-column: span 1;
     }

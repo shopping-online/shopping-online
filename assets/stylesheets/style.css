@@ -40,15 +40,29 @@ ul{
     position: fixed;
 }
 .navigator{
-    height: 80px;
-    transition: 450ms ease-in;
+    transition: 350ms ease-in;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: transparent;
 }
 .scrolled {
-    height: 50px;
-    /* padding: 5px 10px; */
+    padding-bottom: 0;
+    padding-top: 0;
+    background: gray;
 }
-
-
+.bigBG{
+    background: url('../images/bigBG.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    display: block;
+    text-align: center;
+}
+.intro{
+    padding-top: 300px;
+    padding-bottom: 150px;
+}
 .btn{
     list-style: none;
     margin: 0px 10px;
