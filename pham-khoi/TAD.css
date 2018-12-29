@@ -1,0 +1,35 @@
+.form
+{
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	text-align: center;
+	transform: translate( -50% , -50%);
+}
+input
+{
+	width: 100%;
+	margin:20px 0;
+	background: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 1px solid #EAEAEA;
+}
+#msg
+{
+	margin-top: 60px;
+}
+::webkit-input-placeholder
+{
+	color: #EAEAEA;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+button
+{
+	padding: 20px 32px;
+	font-size: 16px;
+	background: #0078ff;
+	border: none;
+	border-radius: 4px;
+	margin-top: 40px;
+}
