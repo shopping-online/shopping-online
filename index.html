@@ -15,7 +15,10 @@
     <script defer src="/__/firebase/init.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
@@ -23,71 +26,76 @@
     <script src="/assets/javascripts/main.js" charset="utf-8"></script>
   </head>
   <body>
-    <div class="main">
-        <h1 class="can_giua">Welcome ShoppingOnline 2019<i class="fas fa-shopping-cart"></i></h1>
+    <div class="container">
+        <h1 class="welcome">Welcome ShoppingOnline 2019</h1>
         <ul>
-            <li class="dropdown">
-              <a href="javascript:void(0)" class="dropbtn"><i class="fas fa-home"></i>Home</i></a>
-                </li>
-                  <li class="dropdown">
-                      <a href="javascript:void(0)" class="dropbtn"><i class="fab fa-product-hunt"></i>Main Products</a>
-                      <div class="dropdown-content">
-                          <a href="">Laptop Acer</a>
-                          <a href="">Laptop HP</a>
-                          <a href="">Laptop Toshiba</a>
-                          <a href="">Gaming PC</a>
-                          <a href="">Programming PC</a>
-                          <a href="">Graphical PC</a>
-                      </div>
-                          <li><a href=""><i class="fas fa-dollar-sign"></i>Promotion Products</a></li>
-                          <li><a href=""><i class="fas fa-plus"></i>Latest</a></li>
-                          <li><a href=""><i class="fab fa-neos"></i>About us</a></li>
-                          <li><a href=""><i class="fas fa-phone"></i>Contact us</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn"><i class="fas fa-home"></i>Home</i></a>
+              </li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn"><i class="fab fa-product-hunt"></i>Main Products</a>
+                    <div class="dropdown-content">
+                      <a href="">Laptop Acer</a>
+                      <a href="">Laptop HP</a>
+                      <a href="">Laptop Toshiba</a>
+                      <a href="">Gaming PC</a>
+                      <a href="">Programming PC</a>
+                      <a href="">Graphical PC</a>
+                    </div>
+                      <li><a href=""><i class="fas fa-dollar-sign"></i>Promotion Products</a></li>
+                      <li><a href=""><i class="fas fa-plus"></i>Latest</a></li>
+                      <li><a href=""><i class="fab fa-neos"></i>About us</a></li>
+                      <li><a href=""><i class="fas fa-phone"></i>Contact us</a></li>
+                      <li class="float-right"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
                    </li>
             </ul>
-                    <img src="assets/images/Banner.jpg" style width="100%"/>
-                    <div class="col-3">
-                        <div class="img">
-                          <p>3d laptop</p>
-                          <img src="assets/images/Alienware.png" style width="95%"/>
+
+                    <img src="assets/images/Banner.jpg"/>
+                    <div class="row mt-5">
+                      <div class="col-sm-4">
+                        <div>
+                          <div class="productTitle">3d laptop</div>
+                          <img class="img" src="assets/images/Alienware.png"/>
                         </div>
-                          <p class="price">$1500</p>
-                    </div>
-                     <div class="col-3">
-                        <div class="img">
-                          <p>pc fullscreen</p>
-                          <img src="assets/images/PC Full Set.jpg" style width="95%"/>
+                          <div class="price">$1500</div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div>
+                          <div class="productTitle">pc fullscreen</div>
+                          <img class="img" src="assets/images/PC Full Set.jpg"/>
                         </div>
-                          <p class="price">$2500</p>
-                    </div>
-                    <div class="col-3">
-                        <div class="img">
-                          <p>mouse</p>
-                          <img src="assets/images/HyperX.jpg" style width="95%"/>
+                          <div class="price">$2500</div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div>
+                          <div class="productTitle">mouse</div>
+                          <img class="img" src="assets/images/HyperX.jpg"/>
                         </div>
-                          <p class="price">$3000</p>
+                          <div class="price">$3000</div>
                     </div>
-                    <div class="col-3">
-                        <div class="img">
-                          <p>cpu</p>
-                          <img src="assets/images/Rs.jpg" style width="95%"/>
+                  </div>
+                    <div class="row mt-5">
+                      <div class="col-sm-4">
+                      <div>
+                          <div class="productTitle">cpu</div>
+                          <img class="img" src="assets/images/Rs.jpg"/>
                         </div>
-                          <p class="price">$3500</p>
-                    </div>
-                    <div class="col-3">
-                        <div class="img">
-                          <p>aluminum</p>
-                          <img src="assets/images/Aluminum.jpg" style width="95%"/>
+                          <div class="price">$3500</div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div>
+                          <div class="productTitle">aluminum</div>
+                          <img class="img" src="assets/images/Aluminum.jpg"/>
                         </div>
-                          <p class="price">$4000</p>
-                    </div>
-                    <div class="col-3">
-                        <div class="img">
-                          <p>lexus</p>
-                          <img src="assets/images/Lexus.jpg" style width="95%"/>
+                          <div class="price">$4000</div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div>
+                          <div class="productTitle">lexus</div>
+                          <img class="img" src="assets/images/Lexus.jpg"/>
                         </div>
-                          <p class="price">$4500</p>
-                    </div>
-      </div>
+                          <div class="price">$4500</div>
+                      </div>                       
+                    </div>                    
   </body>
 </html>
