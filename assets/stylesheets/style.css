@@ -1,98 +1,46 @@
-a {
-    text-decoration: none;
-    color:#fff;
-    padding: 8px 16px;
-    
+.logo{
+    width: 30px;
 }
-a:hover{
-    /* color: #222; */
-    background-color: #222;
-    border-radius: 2px
+.no-spacing{
+    margin: 0 !important;
+    padding: 0 !important ;
 }
-a:active{
-    color: #222;
-    text-decoration: underline;
+.carousel-item img{
+    /* height: 10em; */
+    /* background-size: 50%; */
 }
-ul{
-    padding: 0;
-}
-.menu{
+
+.card{
+    width: 18rem;
+    height: 25rem;
+    background:#aaa;
     position: relative;
-}
-.submenu{
-    position: absolute;
-    list-style: none;
-    left: -300px;
-    display: none;
-    top: 28px;
-    width: 700px;
-    /* padding-top: 10px; */
-    border-radius: 2px;
-    box-shadow: 2px 2px 5px 2px rgb(71, 71, 71);
-    background-color: rgb(68, 68, 68);
-}
-.menu:hover .submenu{
+    overflow: hidden;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+  }
+  .avata{
+    width:100%;
+    height: 100%;
+    transition: 200ms ;
+  
+  }
+  .detail{
+    position:absolute;
+    transition: 200ms ease-in;
+    bottom: -50%;
+    background: linear-gradient(181deg, rgba(104,153,217,0) 0%, rgba(57,166,202,0) 15%, rgba(0,184,184,0.6) 100%);
+  }
+  .content{
+     margin: 20px;
+  }
+  .card:hover .detail{
     display: block;
-    transition:  500ms ease;
-
-}
-.fixed{
-    position: fixed;
-}
-.navigator{
-    transition: 350ms ease-in;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background: transparent;
-}
-.scrolled {
-    padding-bottom: 0;
-    padding-top: 0;
-    background: gray;
-}
-.bigBG{
-    background: url('../images/bigBG.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    display: block;
-    text-align: center;
-}
-.intro{
-    padding-top: 300px;
-    padding-bottom: 150px;
-}
-.btn{
-    list-style: none;
-    margin: 0px 10px;
-    text-align: center;
-}
-.m-15{
-    margin: 15px;
-}
-.fas {
-    font-size: 1.5srem;
-    cursor: pointer;
-    margin: 0 10px;
-    padding: 10px
-}
-
-.bg-gray{
-    background-color: rgb(71, 71, 71);
-}
-.d-flex{
-    display: flex;
-}
-.justify-content-around{
-    justify-content:space-around;
-}
-.justify-content-center{
-    justify-content: center;
-}
-.align-items-center{
-    align-items: center;
-}
-.column{
-    flex-direction: column;
-}
+    bottom: 0;
+    color:#fff;
+  }
+  .card:hover .image .avata{
+      opacity: 0.6;
+  }
