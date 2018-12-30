@@ -39,62 +39,60 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-darkblue ">
-      <div class="container">
-        <a class="navbar-brand h1 no-spacing text-white" href="#">
-          <img src="./assets/images/logo.png" alt="Logo" class="logo "> Shoping Online
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link text-white" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Disabled</a>
-            </li>
-          </ul>
+      <div class="container-fluid">
+        <div class="col-lg-3 col-12 d-flex justify-content-center mb-2 justify-content-md-between">
+          <a class="navbar-brand h1 no-spacing text-white" href="#">
+            <img src="./assets/images/logo.png" alt="Logo" class="logo "> Shoping Online
+          </a>
+          <button class="navbar-toggler ml-4 " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-lg-6 col-12 d-flex justify-content-center">
+          <input class="form-control w-63" type="text" placeholder="Tìm kiếm ....">
+          <div class="btn btn-success ml-1">Tìm kiếm</div>
+        </div>
+        <div class=" col-lg-3 col-12 d-flex justify-content-md-end justify-content-center justify-content-md-center">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenu2" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user-alt mr-2"></i>Tài khoản
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button">Đăng nhập</button>
+              <button class="dropdown-item" type="button">Đăng ký</button>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenu2" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user-alt mr-2"></i>Ngôn ngữ
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button">Tiếng việt</button>
+              <button class="dropdown-item" type="button">Tiếng anh</button>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
-    <div class=" bg-blue p-2">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-5 col-12 d-flex justify-content-center">
-            <input class="form-control w-50" type="text" placeholder="Tìm kiếm ....">
-            <div class="btn btn-success">Tìm kiếm</div>
-          </div>
-          <div class=" col-md-7 col-12 d-flex justify-content-md-end justify-content-center">
-            <div class="dropdown">
-              <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user-alt mr-2"></i>Tài khoản
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">Đăng nhập</button>
-                <button class="dropdown-item" type="button">Đăng ký</button>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user-alt mr-2"></i>Ngôn ngữ
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">Tiếng việt</button>
-                <button class="dropdown-item" type="button">Tiếng anh</button>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="navbar navbar-expand-lg navbar-light bg-blue ">
+      <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Disabled</a>
+          </li>
+        </ul>
       </div>
     </div>
     <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

@@ -50,3 +50,6 @@
   .bg-darkblue{
     background-color: #004bd5;
   }
+  .w-63{
+    width: 63% !important;
+  }
