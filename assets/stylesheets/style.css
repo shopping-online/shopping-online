@@ -1,5 +1,5 @@
 .logo{
-    width: 30px;
+    width: 60px;
 }
 .no-spacing{
     margin: 0 !important;
@@ -43,4 +43,10 @@
   }
   .card:hover .image .avata{
       opacity: 0.6;
+  }
+  .bg-blue{
+    background-color: rgb(56, 126, 255);
+  }
+  .bg-darkblue{
+    background-color: #004bd5;
   }
