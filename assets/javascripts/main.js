@@ -22,3 +22,4 @@ $(document).ready(function() {
   mainModule.initializeApp();
   linhKienModule.clickEvent();
 });
+
