@@ -20,6 +20,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css">
+    <script type="text/javascript" src="./assets/javascripts/linh_kien.js"></script>
+    <script type="text/javascript" src="./assets/javascripts/main.js"></script>
 
 </head>
 <body>
@@ -34,19 +36,19 @@
 				<div class="col-sm-6"></div>
 					<div class="col-sm-2 social">
 						<div class="col-w20">
-							<i class="fab fa-facebook-square"></i>
+							<a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
 						</div>
 						<div class="col-w20">
-							<i class="fab fa-twitter"></i>
+							<a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
 						</div>
 						<div class="col-w20">
-							<i class="fab fa-pinterest-square"></i>
+							<a href="http://pinterest.com" target="_blank"><i class="fab fa-pinterest-square"></i></a>
 						</div>
 						<div class="col-w20">
-							<i class="fab fa-instagram"></i>
+							<a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
 						</div>
 						<div class="col-w20">
-							<i class="fab fa-skype"></i>
+							<a href="http://skype.com" target="_blank"><i class="fab fa-skype"></i></a>
 						</div>
 					</div>
 			</div>
@@ -58,44 +60,58 @@
 				<div class="col-sm-3">
 					
 				</div>
-				<div class="col-sm-7 ">
-					<nav class="navbar-expand-lg navbar-light">
-	  				<a class="navbar-brand" href="#"></a>
-	  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-	   					<span class="navbar-toggler-icon"></span>
-	  				</button>
-		  			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-		    			<div class="navbar-nav">
-		      				<div class="nav-item active">
-		        				<a class="nav-link" href="#">Trang chủ</a>
-		      				</div>
-		      				<div class="nav-item">
-		        				<a class="nav-link" href="#">Giới thiệu</a>
-		      				</div>
-		      				<div class="nav-item dropdown">
-		       					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dịch vụ</a>
-		        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          					<a class="dropdown-item" href="#">Sửa máy tính</a>
-		          					<a class="dropdown-item" href="#">Sửa máy in</a>
-		          					<a class="dropdown-item" href="#">Thi công mạng</a>
-		          					<a class="dropdown-item" href="#">Dịch vụ khác</a>
-		        				</div>
-		      				</div>
-		      				<div class="nav-item dropdown">
-		       					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Linh kiện</a>
-		        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          					<a class="dropdown-item" href="#">Máy tính</a>
-		          					<a class="dropdown-item" href="#">Máy in</a>
-		          					<a class="dropdown-item" href="#">Thiết bị mạng</a>
-		        				</div>
-		      				</div>
-		      				<div class="nav-item">
-		        				<a class="nav-link" href="#">Liên hệ</a>
-		      				</div>
-		      				
-		    			</div>
-		 			</div>
-				</nav>
+				<div class="col-sm-7">
+					<div class="mt">
+						<nav class="navbar-expand-lg navbar-light">
+		  				<a class="navbar-brand" href="#"></a>
+		  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 79%">
+		   					<span class="navbar-toggler-icon"></span>
+		  				</button>
+			  			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			    			<div class="navbar-nav">
+			      				<div class="nav-item active">
+			        				<a class="nav-link" href="#">Trang chủ</a>
+			      				</div>
+			      				<div class="nav-item">
+			        				<a class="nav-link" href="#">Giới thiệu</a>
+			      				</div>
+			      				<div class="nav-item dropdown">
+			       					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dịch vụ</a>
+			        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          					<a class="dropdown-item" href="#">Sửa máy tính</a>
+			          					<a class="dropdown-item" href="#">Sửa máy in</a>
+			          					<a class="dropdown-item" href="#">Thi công mạng</a>
+			          					<a class="dropdown-item" href="#">Dịch vụ khác</a>
+			        				</div>
+			      				</div>
+			      				<div class="nav-item dropdown">
+			       					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Linh kiện</a>
+			        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          					<a class="dropdown-item" href="#">Máy tính</a>
+			          					<a class="dropdown-item" href="#">Máy in</a>
+			          					<a class="dropdown-item" href="#">Thiết bị mạng</a>
+			        				</div>
+			      				</div>
+			      				<div class="nav-item">
+			        				<a class="nav-link" href="#">Liên hệ</a>
+			      				</div>			      				
+			    			</div>
+			    			<div class="button">
+			    				<button type="button" class="btn btn-primary cartBtn"><i class="fas fa-shopping-cart icon"></i>0 item</button>
+			    			</div>
+			 			</div>
+						</nav>
+					</div>
+					<div class="searchBox">
+						<div class="input-group">
+	    					<input type="text" class="form-control" placeholder="Tìm kiếm...">
+	    					<div class="input-group-btn">
+		      					<button class="btn btn-light" type="submit">
+		        					<i class="fas fa-search"></i>
+		      					</button>
+	    					</div>
+  						</div>
+					</div>
 				</div>
 				
 			</div>
@@ -118,7 +134,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -131,11 +147,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -148,11 +164,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -165,11 +181,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -182,13 +198,13 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -201,11 +217,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -218,11 +234,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -235,11 +251,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -252,7 +268,7 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 				</div>
@@ -283,7 +299,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -296,11 +312,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -313,11 +329,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -330,11 +346,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -347,13 +363,13 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -366,11 +382,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -383,11 +399,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -400,11 +416,11 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="col-sm-12 productBox">
+						<div class="productBox">
 							<div class="paddingTop">
 								<img src="https://picsum.photos/240/112">
 							</div>
@@ -417,7 +433,7 @@
 							<div class="desciption">
 								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart"></i> MUA NGAY</button>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 						</div>
 					</div>
 				</div>

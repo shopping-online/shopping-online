@@ -6,42 +6,80 @@
 	font-family: var(--font-family-sans-serif);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .topbar {
 	line-height: 38px;
 	font-weight: bold;
-	background-color: var(--bgLightBlue);
+	background-color: #007bff;
 }
 
 .logo {
-	line-height: 94px;
+	line-height: 112px;
+	font-weight: bold;
+	color: blue;
 }
+
 .icon {
 	margin-right: 4px;
 }
 
 .headbar {
-	height: 94px;
+	height: 112px;
+	background-color: white;
+	position: sticky;
+	top: 0px;
+	z-index: 2;
 }
 
-.social {
+a, .social {
 	color: #98D4F0;
-	position: relative;
+}
+
+.fab {
+	line-height: 38px;
+}
+
+.fab:hover {
+	color: #F9FFFF;
+	cursor: pointer;
 }
 
 .col-w20 {
-	text-align: center;
+	text-align: right;
 	float: left;
 	width: 20%;
 }
 
 .nav-link, .dropdown-item {
 	text-transform: uppercase;
+	color: blue !important;
+}
+
+.nav-item:hover {
+	background-color: #f5f5f5;
+	cursor: pointer;
+}
+
+.mt {
+	margin-top: -18px;
+    margin-bottom: 8px;
+}
+
+.button {
+    width: 26.75%;
+}
+
+.cartBtn {
+	width: 100%;
 }
 
 .lkMaytinh {
-	color: var(--lightBlue);
+	color: #007bff;
 	line-height: 42px;
-	font-size: 24px;
+	font-size: 28px;
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
@@ -110,7 +148,9 @@ s {
 }
 
 .productBox {
-	box-shadow: 0 0 20px #ededed;
+	border-radius: 5px;
+	padding: 0px 15px 0px 15px;
+	box-shadow: 0 0 20px #cfcfcf;
 	margin-top: 46px;
 	width: 100%;
 	height: 380px;
@@ -141,11 +181,7 @@ s {
 .bottombar {
 	line-height: 60px;
 	background-color: var(--btColor);
-}
-
-.miniNav {
-	float: left;
-}
+}	
 
 .footer {
 	font-size: 15px;
@@ -180,7 +216,7 @@ s {
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 56px;
-	background-color: var(--lightBlue);
+	background-color: #007bff;
 }
 
 .reasonsList {
