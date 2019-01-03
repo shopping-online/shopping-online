@@ -21,3 +21,4 @@ var mainModule = (function($) {
 $(document).ready(function() {
   mainModule.initializeApp();
 });
+
