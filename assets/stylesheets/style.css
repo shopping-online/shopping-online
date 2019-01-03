@@ -53,3 +53,7 @@
   .w-63{
     width: 63% !important;
   }
+
+  li{
+    margin: 0 1.2rem 0 1.2rem;
+  }   
