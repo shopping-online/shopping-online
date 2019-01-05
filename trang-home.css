@@ -1,0 +1,103 @@
+:root{
+	--welcometextcolor:white;
+}
+
+.hover:hover{
+	color:#0033CC!important;
+}
+.hover-seach:hover{
+	color:#3399FF !important;
+}
+.txtretroshadow {
+  text-align: center;
+  font-size: 30px;
+  color: #2c2c2c;
+  background-color: #d5d5d5;
+  letter-spacing: .05em;
+  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  padding-top: 25px;
+  border-radius: 70px;
+}
+.linear-gradient{
+	background-image: linear-gradient( black,#888888);
+}
+.height-50{
+	height: 50px;
+}
+.line-height{
+	line-height: 35px;
+}
+.hover-item:hover{
+	color: #0033CC;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: red;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.flash-sale:after{
+  content: '  ';
+    width: 1100px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    margin-top: 10px;
+}
+
+#sach-ky-nang{
+  display:none;
+  position: absolute;
+}
+
+
+.hover1:hover #sach-ky-nang{
+  display: block;
+}
+.item-danh-muc{
+   height: 120px;
+    width: 165px;
+    position: absolute;
+    background-color: #777777;
+    z-index: 10;
+    margin-left: 150px;
+    margin-top:-40;
+  padding: 10px;
+}
+.item-danh-muc:hover,.item-danh-muc{
+  font-size: 150%;
+}
