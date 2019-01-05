@@ -1,0 +1,99 @@
+#main
+{
+	width: 1440px;
+	height: 2660px;
+	border: 1px solid;
+	margin: auto;
+	position: relative;
+}
+.logo
+{
+	width: 65px;
+	height: 50px;
+	font-size: 48px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Megrim';
+	position: absolute;
+	left: 165px;
+	top: 0px;
+}
+.head-bar
+{
+	width: 1440px;
+	height: 70px;
+	background-color: #000;
+}
+.nav
+{
+	width: 375px;
+	height: 26.04px;
+	position: absolute;
+	left: 275px;
+	top: 22px;
+}
+.Game
+{
+	width: 34px;
+	height: 25px;
+	font-size: 14px;
+	color: #fff;
+	font-family: 'Meera Inimai';
+}
+.News
+{
+	width: 33px;
+	height: 25px;
+	font-size: 14px;
+	color: #fff;
+	font-family: 'Meera Inimai';
+}
+.Lives
+{
+	width: 79px;
+	height: 25px;
+	font-size: 14px;
+	color: #fff;
+	font-family: 'Meera Inimai';
+}
+.Guild
+{
+	width: 34px;
+	height: 25px;
+	font-size: 14px;
+	color: #fff;
+	font-family: 'Meera Inimai';
+}
+.wl
+{
+	height: 20px;
+	width: 0px;
+	border: 1.04px solid white;
+	margin-left: 31px;
+	margin-right: 31px;
+}
+.S-box
+{
+	width: 255px;
+	height: 30px;
+	background-color: #C4C4C4;
+	position: absolute;
+	left: 830px;
+	top: 20px;
+}
+.search-icon
+{
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	float: left;
+}
+.S-text
+{
+	width: 125px;
+	height: 16px;
+	font-family: 'Marvel';
+	font-size: 13px;
+	margin: 7px;
+	float:left;
+}
