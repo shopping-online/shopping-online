@@ -1,0 +1,11 @@
+.body.body_about {
+	height: 603px;
+	position: absolute;
+	top: 97px;
+	width: 100%;
+}
+
+.footer.footer_about {
+	position: absolute;
+	top: 700px;
+}

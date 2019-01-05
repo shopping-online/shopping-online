@@ -20,5 +20,5 @@ var mainModule = (function($) {
 
 $(document).ready(function() {
   mainModule.initializeApp();
-  linhKienModule.clickEvent();
+  linhKienModule.initialize();
 });
