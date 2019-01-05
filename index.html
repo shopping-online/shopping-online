@@ -7,84 +7,106 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </head>
 <style type="text/css">
-	.card{
-		margin:15px;
-		padding:15px;
-		margin-left:60px;
-		background-color:blue;
-	}
-	.card-title{
-		color:dodgerblue;
-		font-weight:bold;
-	}
-	.card-text{
-		color:white;
-		font-style:bold;
-	}
-	.col-3{
-		width:33.33%;
-		float:left;
-		margin:20px;
+	.navbar-brand{
+		color:white !important;
+		text-transform:capitalize;
+		font-size:26px;
+		color:orange !important;
 	}
 	.nav-link{
-		color:white !important;
+		color:lightgray !important;
 	}
+	 .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .card-text{
+      	  color:gray;
+      	  text-transform:capitalize;
+      }
+      .card-text:hover{
+      	  color:red; 
+      }
+      h1{
+      	 text-transform:capitalize;
+      	 color:blue;
+      	 margin-left:15px;
+      }
 </style>
 <body>
 	<div class="container">
-				    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
- 					 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    					<ul class="navbar-nav mr-auto">
-						      <li class="nav-item active">
-						        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-						      </li>
-						      <li class="nav-item">
-						        	<a class="nav-link" href="#">Products</a>
-						      </li>
-						       <li class="nav-item">
-						        	<a class="nav-link" href="#">About us</a>
-						      </li>
-						       <li class="nav-item">
-						        	<a class="nav-link" href="#">Contact us</a>
-						      </li>
-						      <li class="nav-item">
-						        	<a class="nav-link" href="#">Checkout</a>
-						      </li>
-					    </ul>
-					    <form class="form-inline my-2 my-lg-0">
-					      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-					    </form>
-					  </div>
-					</nav>
-						<img src="assets/images/Banner.jpg" style width="100%"/>
-				<div class="col-3">
-					<div class="card" style="width: 18rem;">
-  						<img src="assets/images/Lenovo.jpg" class="card-img-top" alt="">
-  					<div class="card-body">
-   						<h5 class="card-title">Dell Laptop</h5>
-    					<p class="card-text">Laptop for the one has a curious thinking and easy to use.</p>
-  					</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="card" style="width: 18rem;">
-  						<img src="assets/images/LenovoV110.jpg" class="card-img-top" alt="">
-  					<div class="card-body">
-   						<h5 class="card-title">Lenovo Laptop</h5>
-    					<p class="card-text">Laptop for the one who loves gaming and want to improve this one skills.</p>
-  					</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="card" style="width: 18rem;">
-  						<img src="assets/images/HPStream.jpeg" class="card-img-top" alt="">
-  					<div class="card-body">
-   						<h5 class="card-title">Streaming HP</h5>
-    					<p class="card-text">Laptop for the one who loves streaming and chat with the others.</p>
-  					</div>
-					</div>
-				</div>
-	</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+			  <a class="navbar-brand" href="">my technology shopping online store</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			   		 <span class="navbar-toggler-icon"></span>
+  			 </button>
+       		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+         		 <ul class="navbar-nav mr-auto">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="">Products</a>
+				      </li>
+				      <li class="nav-item">
+				         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About us</a>
+				      </li>
+				       <li class="nav-item">
+				         <a class="nav-link" href="">Contact us</a>
+				      </li>
+    			  </ul>
+    		<form class="form-inline my-2 my-lg-0">
+      				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    		</form>
+  		</div>
+			</nav>
+				<img src="assets/images/Banner.jpg" style width="100%"/>
+			<div class="album py-5 bg-light">
+    			<div class="container">
+      				<div class="row">
+        		<div class="col-md-4">
+          			<div class="card mb-4 shadow-sm">
+          				<h1>asus laptop</h1>
+            			<img src="assets/images/AsusIndia.png" style width="100%"/>
+            		<div class="card-body">
+              			<p class="card-text">asus laptop comes from india with high quality and easy for the users to use.</p>
+              		<div class="d-flex justify-content-between align-items-center">
+              	<!-- Button here -->
+              		</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+          		<h1>asus series</h1>
+            	<img src="assets/images/LaptopSeries.png" style width="100%"/>
+            <div class="card-body">
+              <p class="card-text">asus series is suitable for the one who has a curious thinking.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                 <!-- Button here -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+          		<h1>asus canada</h1>
+           		<img src="assets/images/AsusCanada.png" style width="100%"/>
+            <div class="card-body">
+              <p class="card-text">asusx540la is the best laptop comes from los angeles america.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <!-- Button here -->
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
 </body>
 </html>
