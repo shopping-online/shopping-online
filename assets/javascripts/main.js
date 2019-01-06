@@ -1,5 +1,5 @@
 var mainModule = (function($) {
-  function initializeFirebase() {    
+  function initializeFirebase() {
     var config = {
       apiKey: "AIzaSyC4585I19YYcZyH5bDKp6FcKlk8sPfxJb8",
       authDomain: "shoppingonline-a7d91.firebaseapp.com",
@@ -20,6 +20,5 @@ var mainModule = (function($) {
 
 $(document).ready(function() {
   mainModule.initializeApp();
-  linhKienModule.clickEvent();
+  linhKienModule.initialize();
 });
-
