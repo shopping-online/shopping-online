@@ -1,0 +1,60 @@
+var linhKienModule = (function($) {
+        function hello() {
+            console.log('Hello World');
+        }
+
+        function clickEvent() {
+            $('.productBox').off('click').on('click', function(event) {
+                var daChon = parseInt($('.counter').attr('da-chon'));
+                if ($(this).hasClass('selected')) {
+                    $(this).removeClass('selected');
+                    daChon --;
+                } else {
+                    $(this).addClass('selected');
+                    daChon ++;
+                }
+                $('.counter').attr('da-chon', daChon);
+                if(daChon > 9) {
+                    daChon = "9+";
+                }
+                    
+                $('.counter').text(daChon);
+            })
+        }
+
+        // function hoverEvent() {
+        //     $('.productBox').hover(function() {
+        //         // hoverin
+        //         // if ($(this).hasClass('hover')) {
+        //         //     $(this).removeClass('hover');
+        //         // }
+        //         // else {
+        //             $(this).addClass('hover');
+        //         // }
+        //     }, function() {
+        //         // hoverout
+        //         $(this).removeClass('hover');
+        //     });
+        // }
+
+        function onHoverIn() {
+            $('.productBox').off('mousemover').on('mouseover', function(event) {
+                $(this).addClass('hover');
+            });
+        }
+
+        function onHoverOut() {
+            $('.productBox').off('mouseout').on('mouseout', function(event) {
+                $(this).removeClass('hover');
+            });
+        }
+
+return {
+        initialize: function() {
+            clickEvent();
+            // hoverEvent();
+            onHoverIn();
+            onHoverOut()
+        }
+    }    
+})(jQuery);

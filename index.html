@@ -20,7 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css">
-    <script type="text/javascript" src="./assets/javascripts/linh_kien.js"></script>
+    <script type="text/javascript" src="./assets/javascripts/lk.js"></script>
     <script type="text/javascript" src="./assets/javascripts/main.js"></script>
 </head>
 <body>
@@ -53,13 +53,14 @@
 			</div>
 				<!-- headbar -->
 			<div class="row headbar">
-				<div class="col-sm-2 logo">
-					LOGO
+				<!-- <div class="col-sm-2 logo">
+					
 				</div>
 				<div class="col-sm-3">
 					
-				</div>
-				<div class="col-sm-7">
+				</div> -->
+				<div class="col-sm-12 bgWhite">
+					<div class="logo">LOGO</div>
 					<div class="mt">
 						<nav class="navbar-expand-lg navbar-light">
 		  				<a class="navbar-brand" href="#"></a>
@@ -95,12 +96,16 @@
 			        				<a class="nav-link" href="#">Liên hệ</a>
 			      				</div>			      				
 			    			</div>
-			    			<div class="button">
-			    				<button type="button" class="btn btn-primary cartBtn"><i class="fas fa-shopping-cart icon"></i>0 item</button>
-			    			</div>
 			 			</div>
-						</nav>
+
 					</div>
+
+					<div class="button">
+			    				<button type="button" class="btn btn-primary cartBtn">
+			    					<i class="fas fa-shopping-cart icon cartIcon"></i><span class="counter" da-chon="0">0</span>
+			    				</button>
+			    			</div>
+						</nav>
 					<div class="searchBox">
 						<div class="input-group">
 	    					<input type="text" class="form-control" placeholder="Tìm kiếm...">
