@@ -26,8 +26,8 @@ p{
 h1:hover{
 	background-color:orange;
 }
-.card-deck{
-	height:75%;
+.card{
+	height:60%;
 }
 hr{
 	width:160px;
