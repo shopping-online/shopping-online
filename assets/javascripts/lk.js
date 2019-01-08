@@ -14,6 +14,14 @@ var linhKienModule = (function($) {
                     daChon ++;
                 }
                 $('.counter').attr('da-chon', daChon);
+                
+                if(daChon == 0) {
+                    $('.counter').addClass('d-none');
+                }
+                else {
+                    $('.counter').removeClass('d-none')
+                }
+                
                 if(daChon > 9) {
                     daChon = "9+";
                 }
