@@ -4,47 +4,200 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shopping Online 2019</title>
-
     <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.7.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.7.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.7.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.7.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.7.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-
     <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
     <link rel="stylesheet" href="/assets/stylesheets/main.css">
+    <link rel="stylesheet" href="/assets/stylesheets/home.css">
     <script src="/assets/javascripts/main.js" charset="utf-8"></script>
-
   </head>
   <body>
-    <div class="main">
+    <!-- header -->
+    <div class="row TS">
+      <div class="col-sm-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ngôn ngữ
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/2000px-Flag_of_Vietnam.svg.png" width="28px" height="28px"></a>
+                  <a class="dropdown-item" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/300px-Flag_of_the_United_Kingdom.svg.png" width="28px" height="28px"></a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- body -->
+    <div></div>
+    <!-- footer -->
+    <div></div>
+    <div class="box">
+      <nav >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Ngôn ngữ
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/2000px-Flag_of_Vietnam.svg.png" width="28px" height="28px"></a>
+                <a class="dropdown-item" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/300px-Flag_of_the_United_Kingdom.svg.png" width="28px" height="28px"></a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="TS"></div>
+    <div id="box2">
+      <div class="text2"><b>Sự Kiện Nổi Bật</b></div>
+    </div>
+    <div id="main">
+      <div class="title1"><b>SỰ KIỆN SẮP DIỄN RA</b></div>
+      <div class="col">
+        <div class="TS1"></div>
+        <div class="title"><b>Múa Hip-hop: #Hashtag 2.0 - Pockemon Crew</b></div>
+        <div class="row2">
+          <div class="col1"><img src="https://image.freepik.com/free-icon/position-ios-7-interface-symbol_318-36652.jpg" width="12px" height="12px"></div>
+          <div class="col2">
+            <div class="text3">Nhà hát Tuổi Trẻ, Thành Phố Hà Nội</div>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="col1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk4gL7bXEdkEFSdKw6c8eY3UcG5B_JMJ1t_yiclo-bYUQx7Exmlw" width="12px" height="12px"></div>
+          <div class="col2">
+            <div class="text3">Thứ 7, 17 Tháng 11 năm 2018</div>
+          </div>
+        </div>
+        <div class="text4"><b>Từ 100.000 VND</b></div>
+      </div>
+      <div class="col">
+        <div class="TS2"></div>
+        <div class="title"><b>Ballet GISELLE </b></div>
+        <div class="row2">
+          <div class="col1"><img src="https://image.freepik.com/free-icon/position-ios-7-interface-symbol_318-36652.jpg" width="12px" height="12px"></div>
+          <div class="col2">
+            <div class="text3">Nhà Hát Lớn, Thành Phố Hồ Chí Minh</div>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="col1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk4gL7bXEdkEFSdKw6c8eY3UcG5B_JMJ1t_yiclo-bYUQx7Exmlw" width="12px" height="12px"></div>
+          <div class="col2">
+            <div class="text3">
+              <div class="row1">Phần 1: Chủ nhật, 18 tháng 11 năm 2018</div>
+              <div class="row1">Phần 2: Thứ năm, 29 tháng 11 năm 2018</div>
+            </div>
+          </div>
+        </div>
+        <div class="text4"><b>Từ 300.000 VND </b></div>
+      </div>
+      <div class="col3">
+        <div class="TS3"></div>
+        <div class="title"><b>RUN FOR THE HEART</b></div>
+        <div class="row2">
+          <div class="col1"><img src="https://image.freepik.com/free-icon/position-ios-7-interface-symbol_318-36652.jpg" width="12px" height="12px"></div>
+          <div class="col2">
+            <div class="text3">Khu đô thị Celadon City, Thành Phố Hồ Chí Minh</div>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="col1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk4gL7bXEdkEFSdKw6c8eY3UcG5B_JMJ1t_yiclo-bYUQx7Exmlw" width="12px" height="12px"></div>
+          <div class="col2">
+            <div class="text3">Chủ nhật, 16 Tháng 12 năm 2018 </div>
+          </div>
+        </div>
+        <div class="text4"><b>Từ 100.000 VND</b></div>
+      </div>
       <div class="row">
-          <div class="col-sm-4">
-              <div class="card border">
-                  AAAA
-              </div>
-          </div>
-          <div class="col-sm-4">
-              <div class="card border">
-                  AAAA
-              </div>
-          </div>
-          <div class="col-sm-4">
-              <div class="card border">
-                  AAAA
-              </div>
-          </div>
+        <div class="title1"><b>DANH MỤC SỰ KIỆN</b></div>
+      </div>
+      <div class="row1">
+        <div class="col4">
+          <div class="TS4"></div>
+        </div>
+        <div class="col4">
+          <div class="TS5"></div>
+        </div>
+        <div class="col5">
+          <div class="TS6"></div>
+        </div>
+        <div class="col4">
+          <div class="TS7"></div>
+        </div>
+        <div class="col4">
+          <div class="TS8"></div>
+        </div>
+        <div class="col5">
+          <div class="TS9"></div>
+        </div>
+      </div>
+      <div class="row1">
+        <div class="box1"><b>XEM TẤT CẢ</b></div>
+      </div>
+    </div>
+    <div class="row3">
+      <div id="main">
+        <div class="col6">
+          <div class="title2"><b>Thông Tin Về Chúng Tôi</b></div>
+          <div class="text5">đội ngũ nhân viên</div>
+          <div class="text5">tuyển dụng</div>
+          <div class="text5">chính sách hoạt động</div>
+        </div>
+        <div class="col6">
+          <div class="title2"><b>Hướng Dẫn Đặt Vé</b></div>
+          <div class="text5">thao tác đơn giản</div>
+          <div class="text5">dễ dàng - tiện lợi</div>
+        </div>
+        <div class="col6">
+          <div class="title2"><b>Theo Dõi Chúng Tôi</b></div>
+          <div class="icon"><i class="fab fa-facebook-f"></i></div>
+          <div class="icon"><i class="fab fa-instagram"></i></div>
+          <div class="icon"><i class="fab fa-twitter"></i></div>
+          <div class="icon"><i class="fab fa-youtube"></i></div>
+        </div>
+        <div class="col7">
+          <div class="title2"><b>Ứng Dụng</b></div>
+          <div class="icon" ><i class="fab fa-app-store"></i></div>
+          <div class="text5">app store</div>
+          <div class="icon" ><i class="fab fa-google-play"></i></div>
+          <div class="text5">google play</div>
+        </div>
       </div>
     </div>
   </body>
