@@ -3,6 +3,24 @@ var linhKienModule = (function($) {
 			console.log("Hello World");
 		}
 
+		function showHideShoppingIcon(count) {
+			if (count == 0) {
+				$('.counter').addClass('d-none');
+			}
+			else {
+				$('.counter').removeClass('d-none')
+			}
+		}
+
+		function updateShoppingCount(value) {
+			if (value > 9) {
+					value = "9+"
+				}
+
+				$('.counter').text(value);
+		}
+
+
 		function clickEvent() {
 
 			$('.item').off('click').on('click', function(event){
@@ -15,7 +33,10 @@ var linhKienModule = (function($) {
 					value ++;
 				}
 				$('.counter').attr('data-value', value);
-				$('.counter').text(value);
+
+				showHideShoppingIcon(value);
+				updateShoppingCount(value);	
+
 			})
 
 		}
