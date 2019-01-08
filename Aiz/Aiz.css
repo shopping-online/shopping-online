@@ -29,7 +29,7 @@
 	width: 375px;
 	height: 26.04px;
 	position: absolute;
-	left: 275px;
+	left: 280px;
 	top: 22px;
 }
 .Game
@@ -50,7 +50,7 @@
 }
 .Lives
 {
-	width: 79px;
+	width: 65px;
 	height: 25px;
 	font-size: 14px;
 	color: #fff;
@@ -96,4 +96,26 @@
 	font-size: 13px;
 	margin: 7px;
 	float:left;
+}
+.big-banner
+{
+	width: 100%;
+	height: 392px;
+	background-repeat: no-repeat;
+}
+.pic
+{
+	width: 1440px;
+	height: 600px;
+}
+.login-form
+{
+	width: 350px;
+	height: 356px;
+	background-color: #000000;
+}
+input 
+{
+	width: 270px;
+	height: 32px;
 }
