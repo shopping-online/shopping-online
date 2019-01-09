@@ -13,6 +13,7 @@ var linhKienModule = (function($) {
                     $(this).addClass('selected');
                     daChon ++;
                 }
+
                 $('.counter').attr('da-chon', daChon);
                 
                 if(daChon == 0) {
@@ -20,6 +21,14 @@ var linhKienModule = (function($) {
                 }
                 else {
                     $('.counter').removeClass('d-none')
+                }
+                
+                // can chin gio hang ve giua
+                if(daChon == 0) {
+                    $('.cartIcon1').removeClass('cartIcon');
+                }
+                else {
+                    $('.cartIcon1').addClass('cartIcon')
                 }
                 
                 if(daChon > 9) {

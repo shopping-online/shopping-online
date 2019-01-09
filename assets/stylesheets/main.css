@@ -149,9 +149,13 @@ img {
 .cartIcon {
 	font-size: 20px;
     position: absolute;
-    /* left: 40%; */
     left: 25%;
     bottom: 0%;
+}
+
+.cartIcon1 {
+	font-size: 20px;
+    line-height: 28px;
 }
 
 .counter {
