@@ -18,6 +18,21 @@ body {
 	background-color: #F5F5F5;
 }
 
+.btn_close {
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	margin-left: 220px;
+	margin-top: 10px;
+	z-index: 30;
+	background-color: #AC2430;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+
 .bg_header_defaul {
 	z-index: 99;
 	position: fixed;
@@ -39,6 +54,10 @@ body {
 	background: url('../images/bg_image.jpg');
 	background-size: cover;
 	background-repeat: none;
+}
+
+.hoverWhite:hover {
+	color: #FFF !important;
 }
 
 .body {

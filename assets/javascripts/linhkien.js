@@ -27,10 +27,13 @@ var linhKienModule = (function($) {
 				var value = parseInt($('.counter').attr('data-value'));
 				if ($(this).hasClass('selected')) {
 					$(this).removeClass('selected');
+					$('.btn_close').addClass('d-none');
 					value --;
 				}
 				else {($(this).addClass('selected'));
 					value ++;
+					$('.btn_close').removeClass('d-none');
+
 				}
 				$('.counter').attr('data-value', value);
 
@@ -43,7 +46,15 @@ var linhKienModule = (function($) {
 
 		function hoverEventIn() {
 			$('.item').off('mouseover').on('mouseover', function(event) {
-				$(this).addClass('hover');
+			if ($(this).hasClass('selected')) {
+				$(this).removeClass('hover');
+
+			}
+
+				// $(this).addClass('hover');
+			else {
+				$(this).addClass('hover')
+			}
 			})
 		}
 
