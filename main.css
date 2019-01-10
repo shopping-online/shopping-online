@@ -1,8 +1,11 @@
+body{
+    overflow-x: hidden;
+}
 .top-0{
     top: 0;
 }
-.right-15{
-    right: 15px;
+.right-0{
+    right: 0;
 }
 .font-size-24{
     font-size: 24px;
@@ -10,3 +13,33 @@
 .font-size-12{
     font-size: 12px;
 }
+.fab{
+    font-size: 30px;
+}
+.nav-item {
+    margin: 0 20px;
+}
+.carousel-item{
+    height: 500px;
+}
+.width-height-40{
+    width:40px;
+    height: 40px;
+}
+.content{
+   position: absolute;
+  
+}
+.box-img{
+    width:100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+img{
+    max-width: 100%;
+    background-size: cover;
+  }
+
