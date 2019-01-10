@@ -23,7 +23,7 @@ var linhKienModule = (function($) {
                     $('.counter').removeClass('d-none')
                 }
                 
-                // can chin gio hang ve giua
+                // can chinh gio hang ve giua
                 if(daChon == 0) {
                     $('.cartIcon1').removeClass('cartIcon');
                 }
