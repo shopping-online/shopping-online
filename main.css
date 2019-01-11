@@ -8,7 +8,7 @@ body{
     right: 0;
 }
 .font-size-24{
-    font-size: 24px;
+    font-size: 1.2rem;
 }
 .font-size-12{
     font-size: 12px;
@@ -60,3 +60,45 @@ img{
     width: 100%;
     left: 0;
 }
+.z-index-2000{
+    z-index: 2000;
+}
+.screenLogin{
+    height: 100vh;
+    width: 100vw;
+    background: url('./images/bigBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.input-box{
+    margin: 40px 0;
+    position: relative;
+}
+.input-box label{
+    position: absolute;
+    user-select: none;
+    left: 0;
+    bottom: 0;
+    transition: 120ms all ease;
+    color: rgb(93, 93, 93);
+}
+.input-box input{
+    border: none;
+    border-bottom: 1px solid dodgerblue;
+    outline: none;
+    padding:6px 4px;
+}
+input:focus + label, input:valid + label{
+    top:-20px;
+    left: -5px;
+    font-size: 18.5px;
+    color: dodgerblue
+}
+.top-5{
+    top: 5px;
+}
+.screenLogin form{
+    box-shadow: 0 0 5px 5px rgb(90, 90, 90);
+}
+

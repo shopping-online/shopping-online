@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class="bg-light">
+    <div class="bg-light d-none d-lg-block">
         <div class="d-flex p-3 align-items-center">
             <div class="col-md-3 d-flex justify-content-center">
                 <a class="navbar-brand" href="#">
@@ -45,8 +45,8 @@
                         <i class="far fa-user font-size-24 text-align-center"></i>
                         <span class="font-size-12">account</span>
                     </div>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Đăng nhập</a>
+                    <div class="dropdown-menu z-index-2000" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="login.html">Đăng nhập</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Đăng ký</a>
                     </div>
@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top d-none d-lg-block">
         <div class="container">
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
@@ -88,6 +88,50 @@
             </div>
         </div>
     </nav>
+
+    <!-- header mobile -->
+    <div class="d-block d-lg-none ">
+        <div class="d-flex justify-content-center pt-3">
+            <a class="navbar-brand" href="#">
+                <img src="./logo.png" alt="" class="d-inline-block align-center width-height-40">
+                Tiny Shop
+            </a>
+        </div>
+        <div class="navbar-nav mr-auto mt-3 bg-light flex-row">
+            <div class="col justify-content-center d-flex p-0">
+                <a href="#" class="nav-link d-flex flex-column">
+                    <i class="fas fa-home font-size-24 d-flex justify-content-center"></i>
+                    <div> Home</div>
+                </a>
+            </div>
+            <div class="col justify-content-center d-flex p-0">
+                <a href="#" class="nav-link d-flex flex-column ">
+                    <i class="fas fa-user font-size-24 d-flex justify-content-center"></i>
+                    <div> Account</div>
+                </a>
+            </div>
+            <div class="col justify-content-center d-flex p-0">
+                <a href="#" class="nav-link d-flex flex-column">
+                    <i class="fas fa-search font-size-24 d-flex justify-content-center"></i>
+                    <div> Search</div>
+                </a>
+            </div>
+            <div class="col justify-content-center d-flex p-0">
+                <a href="#" class="nav-link d-flex flex-column">
+                    <i class="fas fa-user font-size-24 d-flex justify-content-center"></i>
+                    <div> Account</div>
+                </a>
+            </div>
+            <div class="col justify-content-center d-flex p-0 align-items-center">
+                <a href="#" class="btn d-flex flex-column">
+                    <i class="fas fa-shopping-cart font-size-24"><span>0</span></i>
+                    <div> Cart</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- end header mobile -->
 
     <!-- carousel -->
     <div class="container mt-3">
@@ -157,6 +201,90 @@
         </div>
     </div>
     <!-- end catagory -->
+
+    <!-- best-seller -->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-6">
+                <h2>Best - seller</h2>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <a href="#">show all >></a href="#">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box-img">
+                    <img src="https://picsum.photos/800/400" alt="">
+                    <div class="content">
+                        <h3>Milk tea</h3>
+                        <p>view more ....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box-img">
+                    <img src="https://picsum.photos/800/400" alt="">
+                    <div class="content">
+                        <h3>Milk tea</h3>
+                        <p>view more ....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box-img">
+                    <img src="https://picsum.photos/800/400" alt="">
+                    <div class="content">
+                        <h3>Milk tea</h3>
+                        <p>view more ....</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end best-seller -->
+
+    <!-- best-seller -->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-6">
+                <h2>Best - seller</h2>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <a href="#">show all >></a href="#">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box-img">
+                    <img src="https://picsum.photos/800/400" alt="">
+                    <div class="content">
+                        <h3>Milk tea</h3>
+                        <p>view more ....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box-img">
+                    <img src="https://picsum.photos/800/400" alt="">
+                    <div class="content">
+                        <h3>Milk tea</h3>
+                        <p>view more ....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box-img">
+                    <img src="https://picsum.photos/800/400" alt="">
+                    <div class="content">
+                        <h3>Milk tea</h3>
+                        <p>view more ....</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end best-seller -->
 
     <!-- best-seller -->
     <div class="container mb-4">
