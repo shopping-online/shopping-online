@@ -36,6 +36,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 5px 2px rgb(107, 106, 106);
   }
 
 img{
@@ -43,3 +44,19 @@ img{
     background-size: cover;
   }
 
+.box-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: rgba(0,0,0,.2);
+    width: 0;
+    height: 100%;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.box-img:hover::before{
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
