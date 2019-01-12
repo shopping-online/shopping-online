@@ -14,9 +14,9 @@ app.get('/hello', (req, res) => res.render('index', {hello: 'world'}));
 
 app.get('/card', function (req, res) {
 	let cards = [{
-		"Title": 1,
+		"Title": "Audrye Wederell",
 		"desc": "Basile",
-		"btn": "Crang"
+		"btn": "F124"
 	}, {
 		"Title": 2,
 		"desc": "Fred",
