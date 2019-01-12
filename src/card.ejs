@@ -11,7 +11,12 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 	</head>
 	<body>
-
-		<h2>Hello <%= hello %></h2>
+		<div class='row'>
+			<% items.forEach(function(item){ %>
+			<div class='col-sm-3'>
+				<%- include('assets/pages/card', {value: item}); %>
+			</div>	
+				<% }); %>			
+		</div>
 	</body>
 </html>
