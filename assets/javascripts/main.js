@@ -13,7 +13,7 @@ var mainModule = (function($) {
 
   return {
     initializeApp: function() {
-      initializeFirebase();
+      // initializeFirebase();
     }
   }
 })(jQuery);
