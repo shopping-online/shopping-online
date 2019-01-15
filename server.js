@@ -62,11 +62,6 @@ app.get('/card', function(req, res) {
 			btn: "Choice #8"
 		},
 		{
-			title: '#1',
-			desc: "Some....",
-			btn: "Choice #1"
-		},
-		{
 			title: '#9',
 			desc: "Some....",
 			btn: "Choice #9"
@@ -100,11 +95,118 @@ app.get('/card', function(req, res) {
 			title: '#15',
 			desc: "Some....",
 			btn: "Choice #15"
+		},
+		{
+			title: '#16',
+			desc: "Some....",
+			btn: "Choice #16"
 		}
 	];
 	res.render('card', {items: cards});
 })
 
+app.get('/devices', function(req, res) {
+	let items = [
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+		{
+			product_name: 'DDR3_4GB Laptop Hynix',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+		},
+	];
+	res.render('devices', {items: items});
+})
+
 app.listen(8080, function() {
-  console.log('Listening on port ' + 8080 + '...');
+  console.log('Connecting on port ' + 8080 + '...');
 });

@@ -1,0 +1,62 @@
+.productBox {
+	border-radius: 5px;
+	padding: 0px 15px 0px 15px;
+	box-shadow: 0 0 20px #cfcfcf;
+	margin-top: 46px;
+	width: 100%;
+	height: 380px;
+	position: relative;
+}
+
+.paddingTop {
+	padding-top: 24px;
+}
+
+.products {
+	padding-top: 16px;
+	height: 20px;
+}
+
+.prices {
+	color: blue;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 28px;
+	height: 22px;
+}
+
+s {
+	color: var(--textColor);
+	font-size: 14px;
+}
+
+.desciption {
+	    margin-top: 15px;
+	    color: var(--textColor);
+}
+
+.buyNow {
+	font-size: 16px;
+	width: 88.24%;
+	position: absolute;
+	bottom: 20px;
+}
+
+:root {
+	--lightBlue: #31AAE1;
+	--bgLightBlue: #31AAE1;
+	--bgBlue: #0F74EA;
+	--bgColor: #E5E5E5;
+	--textColor: #4D4D4D;
+	--hideTextColor: #8F8F8F;
+	--footerColor: #313131;
+	--btColor: #2D2D2D;
+	--textWhite: #F9FFFF;
+	--textGrey: #6B6B6B;
+	--borderBottom: #3C3C3C;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
