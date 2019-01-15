@@ -19,7 +19,6 @@ app.get('/search', (req, res) => {
 	let dataSearched = data.filter(function(item){
 		return item.name.toLowerCase().indexOf(q.toLowerCase()) !== -1;
 	});
-	console.log(req.query);
 	res.render('index',{
 		data: dataSearched,
 		value : q
