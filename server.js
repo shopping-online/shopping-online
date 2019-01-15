@@ -13,47 +13,88 @@ app.get('/', (req, res) => res.render('index', {hello: ''}));
 app.get('/hello', (req, res) => res.render('index', {hello: 'world'}));
 
 app.get('/card', function (req, res) {
-	let cards = [{
-		"Title": "Audrye Wederell",
-		"desc": "Basile",
-		"btn": "F124"
-	}, {
-		"Title": 2,
-		"desc": "Fred",
-		"btn": "Seligson"
-	}, {
-		"Title": 3,
-		"desc": "Rock",
-		"btn": "Comber"
-	}, {
-		"Title": 4,
-		"desc": "Portie",
-		"btn": "Reuble"
-	}, {
-		"Title": 5,
-		"desc": "Ginger",
-		"btn": "Plumm"
-	}, {
-		"Title": 6,
-		"desc": "Audrye",
-		"btn": "Caulfield"
-	}, {
-		"Title": 7,
-		"desc": "Matthias",
-		"btn": "Lillgard"
-	}, {
-		"Title": 8,
-		"desc": "Lars",
-		"btn": "Fraschini"
-	}, {
-		"Title": 9,
-		"desc": "Jocelyn",
-		"btn": "Birkbeck"
-	}, {
-		"Title": 10,
-		"desc": "Julianne",
-		"btn": "Wederell"
-	}]
+	let cards = [
+		{
+			title: '#1',
+			desc: "Some....",
+			btn: "Choice #1"
+		},
+		{
+			title: '#2',
+			desc: "Some....",
+			btn: "Choice #2"
+		},
+		{
+			title: '#3',
+			desc: "Some....",
+			btn: "Choice #3"
+		},
+		{
+			title: '#4',
+			desc: "Some....",
+			btn: "Choice #4"
+		},
+		{
+			title: '#5',
+			desc: "Some....",
+			btn: "Choice #5"
+		},
+		{
+			title: '#6',
+			desc: "Some....",
+			btn: "Choice #6"
+		},
+		{
+			title: '#7',
+			desc: "Some....",
+			btn: "Choice #7"
+		},
+		{
+			title: '#8',
+			desc: "Some....",
+			btn: "Choice #8"
+		},
+		{
+			title: '#1',
+			desc: "Some....",
+			btn: "Choice #1"
+		},
+		{
+			title: '#9',
+			desc: "Some....",
+			btn: "Choice #9"
+		},
+		{
+			title: '#10',
+			desc: "Some....",
+			btn: "Choice #10"
+		},
+		{
+			title: '#11',
+			desc: "Some....",
+			btn: "Choice #11"
+		},
+		{
+			title: '#12',
+			desc: "Some....",
+			btn: "Choice #12"
+		},
+		{
+			title: '#13',
+			desc: "Some....",
+			btn: "Choice #13"
+		},
+		{
+			title: '#14',
+			desc: "Some....",
+			btn: "Choice #14"
+		},
+		{
+			title: '#15',
+			desc: "Some....",
+			btn: "Choice #15"
+		}
+	];
 	res.render('card', {
 		items: cards
 	});
