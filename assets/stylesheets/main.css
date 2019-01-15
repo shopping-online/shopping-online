@@ -7,14 +7,28 @@ body {
 * {
   box-sizing: border-box;
 }
-.main{
-	width:550px;
-	height:550px;
-	border:1px solid white;
-}
 h1{
+	text-align:center;
+	text-transform:capitalize;
 	color:blue;
 }
-.bg-img{
-	background-image: url('../images/Banner PC.webp');
+.uk-subnav.uk-subnav-pill{
+	margin:50px;
+}
+a{
+	color:navy !important;
+	margin:20px;
+}
+.uk-search.uk-search-default{
+	width:1500px;
+}
+img{
+   margin:10px;
+   border:1px solid lightgray;
+}
+p{
+	color:red !important;
+}
+hr{
+	width:150px;
 }
