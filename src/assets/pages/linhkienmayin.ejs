@@ -1,0 +1,28 @@
+<div class="mayIn">
+	<div class="row">
+		<div class="col-sm-4">
+
+		</div>
+		<div class="col-sm-4">
+			<div class="lkMaytinh">linh kiện máy in</div>
+		</div>
+		<div class="col-sm-4">
+
+		</div>
+	</div>
+	<div class="row">
+		<% items.forEach(function(abc){ %>
+			<div class="col-sm-3">
+				<%- include('device', {item: abc}); %>
+			</div>
+		<% }); %>
+	</div>
+	<div class="note row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+			<div><b>Đối với khách hàng ký hợp đồng dài hạn sẽ có những chính sách ưu đãi kèm theo</b></div>
+			<div><strong>Những vấn đề khác về máy tính, máy in, hệ thống mạng vui lòng gọi <b style="font-size: 18px; color: blue;">0969.942.689</b> để được báo giá  chi tiết</strong></div>
+		</div>
+		<div class="col-sm-1"></div>
+	</div>
+<div>

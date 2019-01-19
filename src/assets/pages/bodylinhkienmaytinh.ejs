@@ -1,0 +1,169 @@
+<div class="mayTinh">
+				<div class="row">
+					<div class="col-sm-4">
+
+					</div>
+					<div class="col-sm-4">
+						<div class="lkMaytinh">linh kiện máy tính</div>
+					</div>
+					<div class="col-sm-4">
+
+					</div>
+				</div>
+				<div class="row">
+					<% items.forEach(function(abc){ %>
+					<div class="col-sm-3">
+						<%- include('pages/device', {may_in: abc}); %>
+					</div>
+				<% }); %>
+					<!-- <div class="col-sm-3">
+						<div class="productBox">
+							<div class="paddingTop">
+								<img src="https://picsum.photos/240/112">
+							</div>
+							<div class="products">
+								<div class="productName">DDR3_4GB Laptop Hynix</div>
+							</div>
+							<div class="prices">
+								<div>650.000 đ <s>690.000 đ</s></div>
+							</div>
+							<div class="desciption">
+								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="productBox">
+							<div class="paddingTop">
+								<img src="https://picsum.photos/240/112">
+							</div>
+							<div class="products">
+								<div class="productName">DDR3_4GB Laptop Hynix</div>
+							</div>
+							<div class="prices">
+								<div>650.000 đ <s>690.000 đ</s></div>
+							</div>
+							<div class="desciption">
+								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="productBox">
+							<div class="paddingTop">
+								<img src="https://picsum.photos/240/112">
+							</div>
+							<div class="products">
+								<div class="productName">DDR3_4GB Laptop Hynix</div>
+							</div>
+							<div class="prices">
+								<div>650.000 đ <s>690.000 đ</s></div>
+							</div>
+							<div class="desciption">
+								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="productBox">
+							<div class="paddingTop">
+								<img src="https://picsum.photos/240/112">
+							</div>
+							<div class="products">
+								<div class="productName">DDR3_4GB Laptop Hynix</div>
+							</div>
+							<div class="prices">
+								<div>650.000 đ <s>690.000 đ</s></div>
+							</div>
+							<div class="desciption">
+								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
+						</div>
+					</div> -->
+				</div>
+				<!-- <div class="row">
+					<div class="col-sm-3">
+						<div class="productBox">
+							<div class="paddingTop">
+								<img src="https://picsum.photos/240/112">
+							</div>
+							<div class="products">
+								<div class="productName">DDR3_4GB Laptop Hynix</div>
+							</div>
+							<div class="prices">
+								<div>650.000 đ <s>690.000 đ</s></div>
+							</div>
+							<div class="desciption">
+								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="productBox">
+							<div class="paddingTop">
+								<img src="https://picsum.photos/240/112">
+							</div>
+							<div class="products">
+								<div class="productName">DDR3_4GB Laptop Hynix</div>
+							</div>
+							<div class="prices">
+								<div>650.000 đ <s>690.000 đ</s></div>
+							</div>
+							<div class="desciption">
+								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="productBox">
+							<div class="paddingTop">
+								<img src="https://picsum.photos/240/112">
+							</div>
+							<div class="products">
+								<div class="productName">DDR3_4GB Laptop Hynix</div>
+							</div>
+							<div class="prices">
+								<div>650.000 đ <s>690.000 đ</s></div>
+							</div>
+							<div class="desciption">
+								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="productBox">
+							<div class="paddingTop">
+								<img src="https://picsum.photos/240/112">
+							</div>
+							<div class="products">
+								<div class="productName">DDR3_4GB Laptop Hynix</div>
+							</div>
+							<div class="prices">
+								<div>650.000 đ <s>690.000 đ</s></div>
+							</div>
+							<div class="desciption">
+								<div class="">DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
+						</div>
+					</div>
+				</div> -->
+				<div class="row">
+					<div class="col-sm-5">
+
+					</div>
+					<div class="col-sm-2">
+						<button type="button" class="btn btn-primary btn-lg btn-block viewAll">XEM TẤT CẢ</button>
+					</div>
+					<div class="col-sm-5">
+
+					</div>
+				</div>
+			</div>
