@@ -1,0 +1,9 @@
+<div class='body'>
+	<div class="row">
+		<% items.forEach(function(abc){ %>
+			<div class="col-sm-2 mb-4">
+				<%- include('device', {item: abc}); %>
+			</div>
+		<% }); %>
+	</div>
+</div>

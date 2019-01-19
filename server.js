@@ -12,6 +12,95 @@ app.use(express.static('src'));
 app.set('views', __dirname + '/src');
 app.set('view engine', 'ejs');
 
+//root path
+app.get('/', function(req, res){
+	res.render('index', {items: [
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		},
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		},
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		},
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		},
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		},
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		},
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		},
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		},
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		},
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		},
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		},
+		{
+			img: 'https://picsum.photos/300/300',
+			product_name: 'Phanh Oman',
+			price1: '650.000 đ',
+			price2: '690.000 đ',
+			description: ''
+		}
+	]});
+});
 app.get('/devices', function(req, res) {
 	let items = [
 		{
