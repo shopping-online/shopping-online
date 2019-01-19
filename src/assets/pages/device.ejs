@@ -1,15 +1,15 @@
 <div class="productBox">
 	<div class="paddingTop">
-		<img src="https://picsum.photos/240/112">
+		<img src="<%= item.img %>">
 	</div>
 	<div class="products">
-		<div class="productName"><%= item.product_name %></div>
+		<div class="productName"><%= item.productName %></div>
 	</div>
 	<div class="prices">
-		<div><%= item.price1 %> <s><%= item.price2 %></s></div>
+		<div><%= item.prices.price1 %> <s><%= item.prices.price2 %></s></div>
 	</div>
 	<div class="desciption">
-		<div class=""><%= item.description %></div>
+		<div class=""><%= item.desciption %></div>
 	</div>
 	<button type="button" class="btn btn-primary btn-lg btn-block buyNow"><i class="fas fa-shopping-cart icon"></i>CHỌN MUA</button>
 </div>
