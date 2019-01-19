@@ -12,7 +12,7 @@ app.use(express.static('src'));
 app.set('views', __dirname + '/src');
 app.set('view engine', 'ejs');
 
-app.get('/devices', function(req, res) {
+app.get('assets/pages/device', function(req, res) {
 	let items = [
 		{
 			product_name: 'DDR3_4GB Laptop Hynix',
@@ -67,6 +67,28 @@ app.get('/devices', function(req, res) {
 })
 
 // connect().use(serveStatic(__dirname + '/public'))
+
+app.get('/', function(req, res) {
+	res.render('index', {items:[{
+		img: 'https://picsum.photos/240/112',
+		productName: 'DDR3_4GB Laptop Hynix',
+		prices: {
+			price1: '650.000 đ',
+			price2: '690.000 đ'
+		},
+		desciption: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+	},
+	{
+		img: 'https://picsum.photos/240/112',
+		productName: 'DDR3_4GB Laptop Hynix',
+		prices: {
+			price1: '650.000 đ',
+			price2: '690.000 đ'
+		},
+		desciption: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+	}
+	]})
+})
 
 app.listen(8080, function(){
     console.log('Server running on 8080...');

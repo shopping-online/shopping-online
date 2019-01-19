@@ -16,6 +16,10 @@ body {
 	line-height: 38px;
 	font-weight: bold;
 	background-color: #007bff;
+	position: relative;
+	z-index: 3;
+	font-size: 12px;
+	color: white;
 }
 
 .logo {
@@ -231,11 +235,6 @@ s {
 .viewAll {
 	font-size: 16px;
 	margin-top: 40px;
-}
-
-.topbar {
-	font-size: 12px;
-	color: white;
 }
 
 .note {
