@@ -97,6 +97,15 @@ a, .social {
 	top: 12%;
 }
 
+.btn-light {
+	border-top-color: #ced4da;
+    border-right-color: #ced4da;
+    border-bottom-color: #ced4da;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 38px;
+}
+
 .searchBox {
 	width: 55%;
 	position: absolute;
