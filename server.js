@@ -12,64 +12,10 @@ app.use(express.static('src'));
 app.set('views', __dirname + '/src');
 app.set('view engine', 'ejs');
 
-app.get('assets/pages/device', function(req, res) {
-	let items = [
-		{
-			product_name: 'DDR3_4GB Laptop Hynix',
-			price1: '650.000 đ',
-			price2: '690.000 đ',
-			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
-		},
-		{
-			product_name: 'DDR3_4GB Laptop Hynix',
-			price1: '650.000 đ',
-			price2: '690.000 đ',
-			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
-		},
-		{
-			product_name: 'DDR3_4GB Laptop Hynix',
-			price1: '650.000 đ',
-			price2: '690.000 đ',
-			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
-		},
-		{
-			product_name: 'DDR3_4GB Laptop Hynix',
-			price1: '650.000 đ',
-			price2: '690.000 đ',
-			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
-		},
-		{
-			product_name: 'DDR3_4GB Laptop Hynix',
-			price1: '650.000 đ',
-			price2: '690.000 đ',
-			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
-		},
-		{
-			product_name: 'DDR3_4GB Laptop Hynix',
-			price1: '650.000 đ',
-			price2: '690.000 đ',
-			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
-		},
-		{
-			product_name: 'DDR3_4GB Laptop Hynix',
-			price1: '650.000 đ',
-			price2: '690.000 đ',
-			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
-		},
-		{
-			product_name: 'DDR3_4GB Laptop Hynix',
-			price1: '650.000 đ',
-			price2: '690.000 đ',
-			description: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
-		}
-	];
-	res.render('devices', {items: items});
-})
-
 // connect().use(serveStatic(__dirname + '/public'))
 
 app.get('/', function(req, res) {
-	res.render('index', {items:[{
+	res.render('index', {may_tinh:[{
 		img: 'https://picsum.photos/240/112',
 		productName: 'DDR3_4GB Laptop Hynix',
 		prices: {
@@ -79,6 +25,16 @@ app.get('/', function(req, res) {
 		desciption: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
 	},
 	{
+		img: 'https://picsum.photos/240/112',
+		productName: 'DDR3_4GB Laptop Hynix',
+		prices: {
+			price1: '650.000 đ',
+			price2: '690.000 đ'
+		},
+		desciption: 'DDR3_4GB Laptop Hynix. Lorem Ipsum is simply dummy text of the printing and...'
+	}
+	],
+	may_in:[{
 		img: 'https://picsum.photos/240/112',
 		productName: 'DDR3_4GB Laptop Hynix',
 		prices: {

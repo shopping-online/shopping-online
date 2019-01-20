@@ -29,6 +29,10 @@ body {
 	color: blue;
 }
 
+.my-4 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 .bgWhite {
 	background-color: white;
 }
@@ -79,7 +83,6 @@ a, .social {
 }
 
 .mt {
-	margin-top: -1%;
     margin-right: 15%;
     float: right;
 }
@@ -95,6 +98,15 @@ a, .social {
     width: 60px;
 	height: 40px;
 	top: 12%;
+}
+
+.btn-light {
+	border-top-color: #ced4da;
+    border-right-color: #ced4da;
+    border-bottom-color: #ced4da;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 38px;
 }
 
 .searchBox {
