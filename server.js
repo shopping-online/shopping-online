@@ -1,37 +1,27 @@
 const express = require('express')
 const app = express()
 const port = 3000
-var data = require('./data');
+var _ = require('lodash');
 
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/Shopping-Online');
 
+var productsRoute = require('./routes/products.route'); 
+var loginRoute = require('./routes/login.route');
+
+// Set view engine
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
-app.use(express.static('public'))
+// define static file
+app.use(express.static('public'));
+app.use('/account',loginRoute);
+app.use('/products',productsRoute);
 
+// Home Page
 app.get('/', (req, res) => {
-	res.render('index',{
-		data: data
-	})
+	res.render('index')
 });
-app.get('/search', (req, res) => {
-	let q = req.query.q;
-	let dataSearched = data.filter(function(item){
-		return item.name.toLowerCase().indexOf(q.toLowerCase()) !== -1;
-	});
-	res.render('index',{
-		data: dataSearched,
-		value : q
-	})
-});
-
-
-
-
-
-
-
-
 
 
 
