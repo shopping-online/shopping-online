@@ -83,6 +83,7 @@ img{
     color: rgb(93, 93, 93);
 }
 .input-box input{
+    width: 100%;
     border: none;
     border-bottom: 1px solid dodgerblue;
     outline: none;

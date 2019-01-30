@@ -19,12 +19,12 @@
         
             <form class="card" method="POST" action="/account/login">
                 <h5 class="card-header bg-light text-primary text-center">Log in your account</h5>
-                <% if (error ) { %>
-                    <div class="alert alert-danger" role="alert">
-                        <%= error %>
-                    </div>
-                <% } else %>
-                <div class="card-body">
+                <div class="card-body" style="width: 18rem;">
+                     <% if (error ) { %>
+                        <div class="alert alert-danger m-0 text-center" role="alert">
+                            <%= error %>
+                        </div>
+                    <% } else %>
                     <div class="input-box">
                         <input type="text" name="email" id="email" required>
                         <label for="email">Username</label>
