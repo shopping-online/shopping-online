@@ -14,25 +14,33 @@
 </head>
 
 <body>
+
     <div class="screenLogin d-flex justify-content-center align-items-center">
-        <form class="card" action="">
-            <h5 class="card-header bg-light text-primary text-center">Log in your account</h5>
-            <div class="card-body">
-                <div class="input-box">
-                    <input type="text" name="email" id="email" required>
-                    <label for="email">Username</label>
+        
+            <form class="card" method="POST" action="/account/login">
+                <h5 class="card-header bg-light text-primary text-center">Log in your account</h5>
+                <% if (error ) { %>
+                    <div class="alert alert-danger" role="alert">
+                        <%= error %>
+                    </div>
+                <% } else %>
+                <div class="card-body">
+                    <div class="input-box">
+                        <input type="text" name="email" id="email" required>
+                        <label for="email">Username</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="password" id="password" required>
+                        <label for="password">Password</label>
+                        <i class="btn fas fa-eye-slash position-absolute right-0 top-5 text-primary"></i>
+                    </div>
+                    <button class="btn btn-primary w-100">Login</button>
+                    <div class="text-center mt-2">
+                        <a href="#" class="w-100 text-center">Create new account</a>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <input type="password" name="password" id="password" required>
-                    <label for="password">Password</label>
-                    <i class="btn fas fa-eye-slash position-absolute right-0 top-5 text-primary"></i>
-                </div>
-                <a href="../index.html" class="btn btn-primary w-100">Login</a>
-                <div class="text-center mt-2">
-                    <a href="#" class="w-100 text-center">Create new account</a>
-                </div>
-            </div>
-        </form>
+            </form>
+        
     </div>
 </body>
 
