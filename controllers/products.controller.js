@@ -19,20 +19,15 @@ module.exports.search = async (req, res) => {
 	});
 };
 
-module.exports.viewDetail = async(req,res) => {
+module.exports.viewDetail = (req,res) => {
 	var id = req.params.id;
-	// let products = await product.find({_id: id}, function (err, athletes) {
-	// 	  if (err) return handleError(err);
-	// 	  // 'athletes' chứa danh sách các vận động viên phù hợp với tiêu chí đã đề ra.
-	// 	  console.log(athletes);
-	// 	}));
-	// for(let i of products){
-	// 	// console.log(i);
-	let products = await product.find();
-	let data = products.find({'_id' : id});
-	console.log(data)
-	res.render('../views/products/detail',{
-		product : data
+	let data = product.findOne({_id: id}, function (err, data) {
+		if(err){
+			console.log(err)
+		}else {
+			res.render('../views/products/detail',{
+				product : data
+			});
+		}
 	});
-	}
-// }
+}

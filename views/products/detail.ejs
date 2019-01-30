@@ -21,15 +21,23 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 	crossorigin="anonymous"></script>
     <!-- local js -->
-	<script src="main.js"></script>
+	<!-- <script src="main.js"></script> -->
 </head>
 <body>
-    <div class="card" style="width: 18rem;">
+ <!--    <div class="card" >
         <ul class="list-group list-group-flush">
-            <li class="list-group-item"><%= product.productName %></li>
-            <li class="list-group-item"><%= product.description %></li>
-            <li class="list-group-item"><%= product.prices %></li>
+            <li class="list-group-item"> <%= product.productName %> </li>
+            <li class="list-group-item"> <%= product.description %> </li>
+            <li class="list-group-item"> <%= product.prices %> </li>
         </ul>
+    </div> -->
+    <div class="card" style="width: 18rem;">
+        <img src=<%= product.image %> class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title"><%= product.productName %></h5>
+            <p class="card-text"><%= product.description %></p>
+            <p class="card-text"><%= product.prices %></p>
+      	</div>
     </div>
 </body>
 </html>
